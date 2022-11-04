@@ -48,6 +48,20 @@ describe('app routes', () => {
     expect(res.body).toEqual(expected);
   });
 
+  it('/laureates/:id should return a 2022 nobel laureate by ID', async () => {
+    const res = await request(app).get('/laureates/1');
+    const bertozzi = {
+      id: '1',
+      firstname: 'Carolyn',
+      surname: 'Bertozzi',
+      motivation:
+        'for the development of click chemistry and bioorthogonal chemistry',
+      share: '3',
+      category: 'chemistry',
+    };
+    expect(res.body).toEqual(bertozzi);
+  });
+
   afterAll(() => {
     pool.end();
   });
