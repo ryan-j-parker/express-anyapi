@@ -35,7 +35,7 @@ CREATE TABLE nobel_table (
     surname VARCHAR NOT NULL,
     motivation VARCHAR NOT NULL,
     share INT NOT NULL,
-    category VARCHAR NOT NULL,
+    category VARCHAR NOT NULL
 );
 
 INSERT INTO nobel_table (firstname, surname, motivation, share, category)

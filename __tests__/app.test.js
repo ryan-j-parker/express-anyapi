@@ -41,7 +41,7 @@ describe('app routes', () => {
     const expected = laureates.map((nobel) => {
       return {
         id: nobel.id,
-        lastName: nobel.last_name,
+        surname: nobel.surname,
         category: nobel.category,
       };
     });
