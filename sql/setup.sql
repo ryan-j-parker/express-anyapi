@@ -1,18 +1,18 @@
 -- Use this file to define your SQL tables
 -- The SQL in this file will be executed when you run `npm run setup-db`
-DROP TABLE IF EXISTS pokemon;
+DROP TABLE IF EXISTS pokemon_table;
 
-CREATE TABLE pokemon (
+CREATE TABLE pokemon_table (
     id BIGINT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR NOT NULL,
     type VARCHAR NOT NULL,
     hp INT NOT NULL,
     attack INT NOT NULL,
     defense INT NOT NULL,
-    url VARCHAR NOT NULL,
-)
+    url VARCHAR NOT NULL
+);
 
-INSERT INTO pokemon (name, type, attack, defense, hp, url)
+INSERT INTO pokemon_table (name, type, attack, defense, hp, url)
 VALUES
 ('Bulbasaur', 'grass/poison', 45, 49, 49, 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg'),
 ('Dratini', 'dragon', 41, 64, 45, 'https://img.pokemondb.net/artwork/large/dratini.jpg'),
