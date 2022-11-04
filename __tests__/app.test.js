@@ -56,7 +56,7 @@ describe('app routes', () => {
       surname: 'Bertozzi',
       motivation:
         'for the development of click chemistry and bioorthogonal chemistry',
-      share: '3',
+      share: 3,
       category: 'chemistry',
     };
     expect(res.body).toEqual(bertozzi);
