@@ -40,17 +40,14 @@ CREATE TABLE nobel_table (
 
 INSERT INTO nobel_table (firstname, surname, motivation, share, category)
 VALUES
- ('Carolyn' 'Bertozzi', 'for the development of click chemistry and bioorthogonal chemistry', '3', 'chemistry'),
- ('Morten' 'Meldal', 'for the development of click chemistry and bioorthogonal chemistry', '3', 'chemistry'),
- ('Barry' 'Sharpless', 'for the development of click chemistry and bioorthogonal chemistry', '3', 'chemistry'),
- ('Ben' 'Bernanke', 'for research on banks and financial crises', '3', 'economics'),
- ('Douglas' 'Diamond', 'for research on banks and financial crises', '3', 'economics'),
- ('Philip' 'Dybvig', 'for research on banks and financial crises', '3', 'economics'),
- ('Annie' 'Ernaux', 'for the courage and clinical acuity with which she uncovers the roots, estrangements and collective restraints of personal memory', '1', 'literature'),
- ('Ales' 'Bialiatski ', 'The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy', '3', 'peace'),
- ('The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy', '3', 'Memorial', 'peace'),
- ('The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy', '3', 'Center for Civil Liberties', 'peace'),
- ('Alain' 'Aspect', 'for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science', '3', 'physics'),
- ('for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science', '3', 'physics'),
- ('Anton' 'Zeilinger', 'for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science', '3', 'physics',)
- ('Svante' 'Pääbo', 'for his discoveries concerning the genomes of extinct hominins and human evolution', '1', 'medicine');
+('Carolyn', 'Bertozzi', 'for the development of click chemistry and bioorthogonal chemistry', 3, 'chemistry'),
+('Morten', 'Meldal', 'for the development of click chemistry and bioorthogonal chemistry', 3, 'chemistry'),
+('Barry', 'Sharpless', 'for the development of click chemistry and bioorthogonal chemistry', 3, 'chemistry'),
+('Ben', 'Bernanke', 'for research on banks and financial crises', 3, 'economics'),
+('Douglas', 'Diamond', 'for research on banks and financial crises', 3, 'economics'),
+('Philip', 'Dybvig', 'for research on banks and financial crises', 3, 'economics'),
+('Annie', 'Ernaux', 'for the courage and clinical acuity with which she uncovers the roots, estrangements and collective restraints of personal memory', 1, 'literature'),
+('Ales', 'Bialiatski ', 'The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy', 3, 'peace'),
+('Alain', 'Aspect', 'for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science', 3, 'physics'),
+('Anton', 'Zeilinger', 'for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science', 3, 'physics'),
+('Svante', 'Pääbo', 'for his discoveries concerning the genomes of extinct hominins and human evolution', 1, 'medicine');
