@@ -14,7 +14,7 @@ CREATE TABLE pokemon_table (
 
 INSERT INTO pokemon_table (name, type, attack, defense, hp, url)
 VALUES
-('Bulbasaur', 'grass/poison', 45, 49, 49, 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg'),
+('Bulbasaur', 'grass/poison', 49, 49, 49, 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg'),
 ('Dratini', 'dragon', 41, 64, 45, 'https://img.pokemondb.net/artwork/large/dratini.jpg'),
 ('Charmander', 'fire', 39, 52, 43, 'https://img.pokemondb.net/artwork/large/charmander.jpg'),
 ('Squirtle', 'water', 44, 48, 65, 'https://img.pokemondb.net/artwork/large/squirtle.jpg'),

@@ -27,7 +27,7 @@ describe('pokemon routes', () => {
       id: '1',
       name: 'Bulbasaur',
       type: 'grass/poison',
-      hp: 45,
+      hp: 49,
       attack: 49,
       defense: 49,
       url: 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg',
