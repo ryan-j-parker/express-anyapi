@@ -5,19 +5,20 @@ const app = require('../lib/app');
 
 const { pokemon } = require('../lib/pokemon-data');
 
-describe('pokemon routes', () => {
-  
+const { laureates } = require('../lib/nobel-data');
+
+describe('app routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
-  
+
   it('/pokemon should return a list of pokemon', async () => {
     const res = await request(app).get('/pokemon');
-  
+
     const expected = pokemon.map((mon) => {
       return { id: mon.id, name: mon.name, type: mon.type };
     });
-  
+
     expect(res.body).toEqual(expected);
   });
 
@@ -34,9 +35,20 @@ describe('pokemon routes', () => {
     };
     expect(res.body).toEqual(bulbasaur);
   });
-  
+
+  it('/laureates should return the list of 2022 nobel laureates', async () => {
+    const res = await request(app).get('/laureates');
+    const expected = laureates.map((nobel) => {
+      return {
+        id: nobel.id,
+        lastName: nobel.last_name,
+        category: nobel.category,
+      };
+    });
+    expect(res.body).toEqual(expected);
+  });
+
   afterAll(() => {
     pool.end();
   });
-
 });
