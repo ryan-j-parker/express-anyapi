@@ -20,6 +20,20 @@ describe('pokemon routes', () => {
   
     expect(res.body).toEqual(expected);
   });
+
+  it('/pokemon/:id should return pokemon by id', async () => {
+    const res = await request(app).get('/pokemon/1');
+    const bulbasaur = {
+      id: '1',
+      name: 'Bulbasaur',
+      type: 'grass/poison',
+      hp: 45,
+      attack: 49,
+      defense: 49,
+      url: 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg',
+    };
+    expect(res.body).toEqual(bulbasaur);
+  });
   
   afterAll(() => {
     pool.end();
